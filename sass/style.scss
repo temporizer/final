@@ -1,0 +1,408 @@
+@import "compass/reset";
+@import "variables";
+@import "compass/layout/sticky-footer";
+
+body {
+	font: $text;
+	min-width: 305px;
+	background: $background;
+	// position: relative;
+	// border: 1px solid black;
+}
+.clear{ clear: both; }
+.menu-icon {
+	position: absolute;
+	top: 8px;
+	right: 12px;
+	padding: 5px;
+	cursor: pointer;
+
+	i {
+		font-size: 25px;
+		color: $iconColor;
+	}
+}
+
+header {
+	position: relative;
+	height: 49px;
+	background-color: $headerBgColor;
+	// margin-bottom: 12px;
+	// @include box-shadow(0px, 3px, 5px, 1px, rgba(0,0,0,0.2));
+	@include box-shadow(0px, 3px, 5px, 1px, $green50);
+
+
+	nav {
+		position: absolute;
+		top: 49px;
+		max-width: 1200px;
+		margin: 0 auto;
+		display: none;
+		width: 100%;
+		ul {
+			display: block;
+			// border-bottom: 2px solid black;
+			// padding-bottom: 100%;
+			// background-color: $bgLink;
+			
+			// display: none;
+			@include box-shadow(0px, 3px, 8px, 5px, rgba(0,0,0,0.7));
+			// border-bottom: 2px solid black;
+			li {
+				text-align: left;
+				// border: 1px solid red;
+				
+				a {
+				padding: 15px;
+				font-size: 20px;
+				display: block;
+				text-decoration: none;
+				background-color: $bgLink;
+				color: $linkColor;
+				}
+
+				a:hover {
+					color: $fgLink_hover;
+					background: $linkColor;
+				}
+
+				a.active {
+					color: $fgActive;
+					background: $linkColor;
+					cursor: default;
+
+				}
+			}
+		}
+	}
+
+	#head {
+
+		#logo {
+			// position: absolute;
+			// display: none;
+			// top: 12px;
+			// left: 13px;
+			max-width: 1200px;
+			margin: 0 auto;
+			// border: 1px solid red;
+			padding-top: 12px;
+			padding-left: 13px;
+			font-size: 1.6em;
+			
+			a {
+				text-decoration: none;
+				color: white;
+				display: inline-block;
+				// border: 1px solid red;
+			}
+
+			.logo1 a {
+				color: black;
+			}
+
+			.logo1 {
+				font-family: $logo1;
+				display: inline-block;
+				background-color: white;
+				padding: 4px 4px;
+				color: black;
+				// font-size: 1.2em;
+				// position: absolute;
+			}
+
+			.logo2 {
+				font-family: $logo2;
+				background: black;
+				color: white;
+				display: inline-block;
+				padding: 1px 4px;
+				letter-spacing: 7px;
+				margin-left: 3px;
+				// position: absolute;
+				// top: 21px;
+				// left: 30px;
+			}
+		}
+	}
+}
+
+#wrapper {
+
+	max-width: 1200px;
+	margin: 17px auto 15px auto;
+	padding: 0 8px;
+
+	h1, h2, h3, h4, h5, h6 { 
+		margin-bottom: 10px; 
+		@include border-radius(3px);
+	}
+	
+	section {
+		margin-bottom: 25px;
+	}
+
+	h1 { 
+		font-size: 1.6em; 
+		font-family: $logo1; 
+		padding: 10px; 
+		margin-bottom: 15px;
+		color: $green; 
+		background: $h1bg;
+		text-align: center;
+	}
+
+	h2 { font-size: 1.4em; }
+	h3 { font-size: 1.2em; }
+	
+	p {
+		padding: 0 8px;
+		margin-bottom: 12px;
+	}
+
+	.images {
+		// border: 1px solid black;
+		text-align: center;
+		// padding-bottom: 35px;
+		img {
+			margin: 0px auto;
+			display: inline-block;
+			// height: 128px;
+			// width: 128px;
+			// background: $green;
+			// @include border-radius(25px);
+		}
+		img.me {				
+			width: 200px;
+			height: 200px;
+			padding-bottom: 0px;
+			@include border-radius(25px);
+			display: none;
+		}
+	}
+
+	#portfolio {
+		padding-top: 10px;
+		img {
+			height: 250px;
+			width: 250px;
+			display: block;
+			margin: 5px auto;
+			@include box-shadow(0px, 0px, 5px, 5px, $green50);
+			@include border-radius(15px);
+
+		}
+		h1 {
+			margin-bottom: 25px;
+		}
+		p {
+			text-align: center;
+			margin: 10px 0 25px 0;
+		}
+	}
+	#contact {
+		padding: 0 5px;
+		text-align: center;
+		margin-top: 25px;
+		form {
+			padding: 0;
+			input, textarea{
+				text-align: center;
+				padding: 8px 0;
+				font-size: 16px;
+				border: 1px solid $green50;
+				display: block;
+				width: 100%;
+				height: 25px;
+				margin-bottom: 10px;
+				@include border-radius(5px);
+			}
+			input:focus, textarea:focus {
+				outline-color: $green50;
+			}
+			button {
+				display: inline-block;
+				cursor: pointer;
+				font-size: 16px;
+				padding: 8px 0;
+				width: 110px;
+				margin: 5px 8px 0 8px;
+				@include border-radius(5px);
+				border: 1px solid $green;
+				background: $green50;
+			}
+			button:hover {
+				background: $green;
+			}
+		}
+	}
+	#about {
+
+		.align-left {
+			float: left;
+			margin: 8px 15px;
+		}
+
+		.align-right {
+			float: right;
+			margin: 8px 15px;
+		}
+		img {
+			width: 150px;
+			height: 150px;
+			@include border-radius(5px);
+			@include box-shadow(0px, 0px, 5px, 5px, $green50);
+		}
+	}
+}
+footer {
+	height: 75px;
+	background: black;
+	width: 100%;
+	// padding-top: 1px;
+	// padding: 8px 0;
+	@include box-shadow(0px, -3px, 5px, 1px, $green50);
+
+	.social {
+		padding-top: 5px;
+		ul {
+			max-width: 1200px;
+			margin: 0 auto;
+			text-align: center;
+
+			li {
+				display: inline-block;
+				margin: 8px 15px;
+				// border: 1px solid blue;
+
+				a {
+					text-decoration: none;
+					display: block;
+					color: $linkColor;
+					font-size: 28px;
+					// background: $bgLink;
+				}
+				a:hover {
+					color: white;
+				}
+			}
+		}
+	}
+
+	.copy {
+		display: block;
+		color: $green50;
+		text-align: center;
+		// padding: 5px;
+		font-size: .8em;
+	}
+}
+
+
+@include sticky-footer(75px, "#main", "#root_footer", "#footer");
+
+@media (min-width: 600px ) {
+	.menu-icon {
+		display: none;
+	}
+	header {
+		nav {
+			// border: 1px solid yellow;
+			position: initial;
+			display: initial;
+
+			ul {
+				float: right;
+				background-color: initial;
+				padding-bottom: initial;
+				border-bottom: none;
+				box-shadow: initial;
+
+				li {
+					display: inline-block;
+					width: initial;
+					// margin: 0 -2px;
+
+					a {
+						background: black;
+					}
+					a.active, a:hover {
+						padding-bottom: 20px;
+						@include box-shadow(0px, px, 3px, 1px, rgba(0,0,0,0.3));
+						@include border-bottom-radius(7px);
+					}
+				}
+			}
+		}
+	}
+	#wrapper {
+
+		.images {
+			.row1, .row2 {
+				display: inline-block;
+			}
+			img {
+				// display: inline-block;
+				// vertical-align: center;
+			}			
+		}
+
+		#portfolio {
+			text-align: center;
+			div {
+				// border: 1px solid red;
+				display: inline-block;
+				padding: 0 2% 10px 2%;
+			}
+			img {
+
+			}
+			p {
+				display: none;
+			}
+		}
+		#contact {
+			form {
+				margin: 0 auto;
+				max-width: 600px;
+			}
+		}
+	}
+}
+@media (min-width: 850px) {
+	#wrapper {
+		// .clear{ clear: both; }
+		.row {
+			display: inline-block;
+			@include box-sizing(border-box);
+			width: 50%;
+			float: left;
+			padding: 0 20px;
+			margin: 0;
+
+		}
+		.images {
+			width: 100%;
+			padding-top: 15px;
+			img {
+
+			}
+
+			img.me {
+				display: inline-block;
+				@include box-shadow(0px, 0px, 10px, 10px, $green50);
+			}
+		}
+		#portfolio {
+			div {
+				padding: 0 7% 10px 7%;
+			}
+		}
+		#about {
+			.me {
+				display: none;
+			}
+		}
+
+	}
+}

@@ -1,0 +1,58 @@
+$logo1: 'Nothing You Could Do', cursive;
+$logo2: 'Kameron', serif;
+$text: normal 1em/1.2em 'Nunito', sans-serif;
+
+$background: white;
+// $background: url('../images/rainbow.jpg');
+// Nav Link colors
+$linkColor: rgba(161,204,20,1);
+$fgActive: black;
+$iconColor: rgba(161,204,20,1);
+
+// Menu link background
+// $bgLink: rgba(50,50,50,1.0);
+$bgLink: black;
+$fgLink_hover: black;
+
+// Header colors
+$headerBgColor: black;
+$h1fg: rgba(61,85,255,1);
+$h1bg: black;
+
+
+$green: rgba(161,204,20,1);
+$green50: rgba(161,204,20,0.5);
+
+
+@mixin box-sizing($style) {
+	-webkit-box-sizing: $style;
+	-moz-box-sizing: $style;
+	-ms-box-sizing: $style;
+	box-sizing: $style;
+}
+
+@mixin border-radius($px) {
+	-webkit-border-radius: $px;
+	-moz-border-radius: $px;
+	-ms-border-radius: $px;
+	border-radius: $px;
+}
+
+@mixin border-bottom-radius($px) {
+	border-bottom-left-radius: $px;
+	-webkit-border-bottom-left-radius: $px;
+	-moz-border-bottom-left-radius: $px;
+	-ms-border-bottom-left-radius: $px;
+
+	border-bottom-right-radius: $px;
+	-webkit-border-bottom-right-radius: $px;
+	-moz-border-bottom-right-radius: $px;
+	-ms-border-bottom-right-radius: $px;
+}
+
+@mixin box-shadow($px1, $px2, $px3, $px4, $color) {
+	-webkit-box-shadow: $px1 $px2 $px3 $px4 $color;
+	-moz-box-shadow: $px1 $px2 $px3 $px4 $color;
+	-ms-box-shadow: $px1 $px2 $px3 $px4 $color;
+	box-shadow: $px1 $px2 $px3 $px4 $color;
+}

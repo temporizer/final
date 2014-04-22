@@ -1,0 +1,437 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  font: normal 1em/1.2em "Nunito", sans-serif;
+  min-width: 305px;
+  background: white;
+}
+
+.clear {
+  clear: both;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  padding: 5px;
+  cursor: pointer;
+}
+.menu-icon i {
+  font-size: 25px;
+  color: #a1cc14;
+}
+
+header {
+  position: relative;
+  height: 49px;
+  background-color: black;
+  -webkit-box-shadow: 0px 3px 5px 1px rgba(161, 204, 20, 0.5);
+  -moz-box-shadow: 0px 3px 5px 1px rgba(161, 204, 20, 0.5);
+  -ms-box-shadow: 0px 3px 5px 1px rgba(161, 204, 20, 0.5);
+  box-shadow: 0px 3px 5px 1px rgba(161, 204, 20, 0.5);
+}
+header nav {
+  position: absolute;
+  top: 49px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: none;
+  width: 100%;
+}
+header nav ul {
+  display: block;
+  -webkit-box-shadow: 0px 3px 8px 5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 3px 8px 5px rgba(0, 0, 0, 0.7);
+  -ms-box-shadow: 0px 3px 8px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 3px 8px 5px rgba(0, 0, 0, 0.7);
+}
+header nav ul li {
+  text-align: left;
+}
+header nav ul li a {
+  padding: 15px;
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  background-color: black;
+  color: #a1cc14;
+}
+header nav ul li a:hover {
+  color: black;
+  background: #a1cc14;
+}
+header nav ul li a.active {
+  color: black;
+  background: #a1cc14;
+  cursor: default;
+}
+header #head #logo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-left: 13px;
+  font-size: 1.6em;
+}
+header #head #logo a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+header #head #logo .logo1 a {
+  color: black;
+}
+header #head #logo .logo1 {
+  font-family: "Nothing You Could Do", cursive;
+  display: inline-block;
+  background-color: white;
+  padding: 4px 4px;
+  color: black;
+}
+header #head #logo .logo2 {
+  font-family: "Kameron", serif;
+  background: black;
+  color: white;
+  display: inline-block;
+  padding: 1px 4px;
+  letter-spacing: 7px;
+  margin-left: 3px;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: 17px auto 15px auto;
+  padding: 0 8px;
+}
+#wrapper h1, #wrapper h2, #wrapper h3, #wrapper h4, #wrapper h5, #wrapper h6 {
+  margin-bottom: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+#wrapper section {
+  margin-bottom: 25px;
+}
+#wrapper h1 {
+  font-size: 1.6em;
+  font-family: "Nothing You Could Do", cursive;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: #a1cc14;
+  background: black;
+  text-align: center;
+}
+#wrapper h2 {
+  font-size: 1.4em;
+}
+#wrapper h3 {
+  font-size: 1.2em;
+}
+#wrapper p {
+  padding: 0 8px;
+  margin-bottom: 12px;
+}
+#wrapper .images {
+  text-align: center;
+}
+#wrapper .images img {
+  margin: 0px auto;
+  display: inline-block;
+}
+#wrapper .images img.me {
+  width: 200px;
+  height: 200px;
+  padding-bottom: 0px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+  display: none;
+}
+#wrapper #portfolio {
+  padding-top: 10px;
+}
+#wrapper #portfolio img {
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin: 5px auto;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(161, 204, 20, 0.5);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(161, 204, 20, 0.5);
+  -ms-box-shadow: 0px 0px 5px 5px rgba(161, 204, 20, 0.5);
+  box-shadow: 0px 0px 5px 5px rgba(161, 204, 20, 0.5);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+}
+#wrapper #portfolio h1 {
+  margin-bottom: 25px;
+}
+#wrapper #portfolio p {
+  text-align: center;
+  margin: 10px 0 25px 0;
+}
+#wrapper #contact {
+  padding: 0 5px;
+  text-align: center;
+  margin-top: 25px;
+}
+#wrapper #contact form {
+  padding: 0;
+}
+#wrapper #contact form input, #wrapper #contact form textarea {
+  text-align: center;
+  padding: 8px 0;
+  font-size: 16px;
+  border: 1px solid rgba(161, 204, 20, 0.5);
+  display: block;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+#wrapper #contact form input:focus, #wrapper #contact form textarea:focus {
+  outline-color: rgba(161, 204, 20, 0.5);
+}
+#wrapper #contact form button {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 0;
+  width: 110px;
+  margin: 5px 8px 0 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #a1cc14;
+  background: rgba(161, 204, 20, 0.5);
+}
+#wrapper #contact form button:hover {
+  background: #a1cc14;
+}
+#wrapper #about .align-left {
+  float: left;
+  margin: 8px 15px;
+}
+#wrapper #about .align-right {
+  float: right;
+  margin: 8px 15px;
+}
+#wrapper #about img {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(161, 204, 20, 0.5);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(161, 204, 20, 0.5);
+  -ms-box-shadow: 0px 0px 5px 5px rgba(161, 204, 20, 0.5);
+  box-shadow: 0px 0px 5px 5px rgba(161, 204, 20, 0.5);
+}
+
+footer {
+  height: 75px;
+  background: black;
+  width: 100%;
+  -webkit-box-shadow: 0px -3px 5px 1px rgba(161, 204, 20, 0.5);
+  -moz-box-shadow: 0px -3px 5px 1px rgba(161, 204, 20, 0.5);
+  -ms-box-shadow: 0px -3px 5px 1px rgba(161, 204, 20, 0.5);
+  box-shadow: 0px -3px 5px 1px rgba(161, 204, 20, 0.5);
+}
+footer .social {
+  padding-top: 5px;
+}
+footer .social ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer .social ul li {
+  display: inline-block;
+  margin: 8px 15px;
+}
+footer .social ul li a {
+  text-decoration: none;
+  display: block;
+  color: #a1cc14;
+  font-size: 28px;
+}
+footer .social ul li a:hover {
+  color: white;
+}
+footer .copy {
+  display: block;
+  color: rgba(161, 204, 20, 0.5);
+  text-align: center;
+  font-size: .8em;
+}
+
+html, body {
+  height: 100%;
+}
+
+#main {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -75px;
+}
+#main #root_footer {
+  height: 75px;
+}
+
+#footer {
+  clear: both;
+  position: relative;
+  height: 75px;
+}
+
+@media (min-width: 600px) {
+  .menu-icon {
+    display: none;
+  }
+
+  header nav {
+    position: initial;
+    display: initial;
+  }
+  header nav ul {
+    float: right;
+    background-color: initial;
+    padding-bottom: initial;
+    border-bottom: none;
+    box-shadow: initial;
+  }
+  header nav ul li {
+    display: inline-block;
+    width: initial;
+  }
+  header nav ul li a {
+    background: black;
+  }
+  header nav ul li a.active, header nav ul li a:hover {
+    padding-bottom: 20px;
+    -webkit-box-shadow: 0px px 3px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px px 3px 1px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0px px 3px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px px 3px 1px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-bottom-left-radius: 7px;
+    -ms-border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -moz-border-bottom-right-radius: 7px;
+    -ms-border-bottom-right-radius: 7px;
+  }
+
+  #wrapper .images .row1, #wrapper .images .row2 {
+    display: inline-block;
+  }
+  #wrapper #portfolio {
+    text-align: center;
+  }
+  #wrapper #portfolio div {
+    display: inline-block;
+    padding: 0 2% 10px 2%;
+  }
+  #wrapper #portfolio p {
+    display: none;
+  }
+  #wrapper #contact form {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+@media (min-width: 850px) {
+  #wrapper .row {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding: 0 20px;
+    margin: 0;
+  }
+  #wrapper .images {
+    width: 100%;
+    padding-top: 15px;
+  }
+  #wrapper .images img.me {
+    display: inline-block;
+    -webkit-box-shadow: 0px 0px 10px 10px rgba(161, 204, 20, 0.5);
+    -moz-box-shadow: 0px 0px 10px 10px rgba(161, 204, 20, 0.5);
+    -ms-box-shadow: 0px 0px 10px 10px rgba(161, 204, 20, 0.5);
+    box-shadow: 0px 0px 10px 10px rgba(161, 204, 20, 0.5);
+  }
+  #wrapper #portfolio div {
+    padding: 0 7% 10px 7%;
+  }
+  #wrapper #about .me {
+    display: none;
+  }
+}
