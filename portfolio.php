@@ -16,9 +16,6 @@
 			<div>
 				<a href="images/html.jpg" data-lightbox="projects" title="HTML Final"><img src="images/thumbs/html.jpg" alt="1"></a>
 				<p>This is my final I did in HTML class</p>
-				<p>
-					This is more information
-				</p>
 			</div>
 </section>
 <?php include 'includes/footer.inc.php'; ?>
